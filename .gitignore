@@ -1,0 +1,31 @@
+# Python and local tooling
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Windows binaries and build output
+/_internal/
+/release/
+/dist/
+/build/
+/.package-work/
+/.studio-dev-deps/
+*.exe
+*.spec
+
+# Local profiles, backups and credentials
+/backups/
+/studio3-local/
+*.sqlite*
+*.db
+*.db-*
+*.session*
+profile.lock
+tdata/
+.env
+.env.*
+*.log

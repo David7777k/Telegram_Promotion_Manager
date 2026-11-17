@@ -1,0 +1,91 @@
+{
+  "version": 2,
+  "campaigns": [
+    {
+      "id": "campaign",
+      "name": "Книги 📚",
+      "channel": "Книги",
+      "channel_chat_id": "-100123",
+      "description": "Текст {с примерами} | цитаты",
+      "link": "https://t.me/+ExampleV2",
+      "price": 250,
+      "content_ready": true
+    }
+  ],
+  "targets": [
+    {
+      "id": "venue",
+      "chat_id": "@reading_group",
+      "name": "Партнёр",
+      "approved": true,
+      "approval_note": "Согласовано",
+      "last_sent_at": "2026-11-12 18:00"
+    }
+  ],
+  "templates": [
+    {
+      "id": "template",
+      "name": "Первый",
+      "body": "{channel} — {price} Stars, 30 дней. {link}"
+    }
+  ],
+  "posts": [
+    {
+      "id": "post0",
+      "campaign_id": "campaign",
+      "target_id": "venue",
+      "template_id": "template",
+      "scheduled_at": "2026-11-12 18:00",
+      "status": "planned"
+    },
+    {
+      "id": "post1",
+      "campaign_id": "campaign",
+      "target_id": "venue",
+      "template_id": "template",
+      "scheduled_at": "2026-11-12 18:00",
+      "status": "sending"
+    },
+    {
+      "id": "post2",
+      "campaign_id": "campaign",
+      "target_id": "venue",
+      "template_id": "template",
+      "scheduled_at": "2026-11-12 18:00",
+      "status": "sent",
+      "message_id": "17",
+      "sent_at": "2026-11-12 18:00",
+      "price_at_send": 250,
+      "paid": 2,
+      "actual_cost_uah": 17.55
+    },
+    {
+      "id": "post3",
+      "campaign_id": "campaign",
+      "target_id": "venue",
+      "template_id": "template",
+      "scheduled_at": "2026-11-12 18:00",
+      "status": "failed"
+    },
+    {
+      "id": "post4",
+      "campaign_id": "campaign",
+      "target_id": "venue",
+      "template_id": "template",
+      "scheduled_at": "2026-11-12 18:00",
+      "status": "blocked"
+    }
+  ],
+  "activity": [
+    {
+      "at": "2026-11-12 18:00",
+      "level": "info",
+      "message": "Импорт ✅"
+    }
+  ],
+  "settings": {
+    "dry_run": false,
+    "auto_schedule": true
+  },
+  "selected_campaign": "campaign"
+}

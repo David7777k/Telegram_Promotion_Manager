@@ -1,0 +1,8 @@
+{
+  "channel": "Книги 📚",
+  "link": "https://t.me/+ExampleV1",
+  "price": 250,
+  "targets": [{"id": "venue1", "label": "Партнёр", "chat_id": "@reading_group", "approved": true}],
+  "last_sent": {"venue1": 1762000000},
+  "templates": {"Обычный": "{channel} — {price} Stars, 30 дней. {link}"}
+}

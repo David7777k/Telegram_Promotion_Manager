@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "telegram-promotion-studio"
+version = "3.0.0.dev0"
+requires-python = ">=3.12"
+dependencies = ["tzdata; sys_platform == 'win32'"]
+
+[project.optional-dependencies]
+desktop = ["PySide6-Essentials>=6.8,<7", "Telethon>=1.40,<2", "qrcode>=8,<9"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
